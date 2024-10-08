@@ -51,4 +51,6 @@
   .ratings-block {
     text-align: center;
   }
-  
+  p {
+    text-align: center;
+  }
