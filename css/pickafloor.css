@@ -8,59 +8,47 @@
   body {
     background: var(--primary);
 }
-main {
-    width: 100vw;
-    display:grid;
-    grid-template-columns:repeat(12, 1fr);
-    grid-template-rows: repeat(4, minmax(100px, auto));
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-item {
+    width: 10px;
+    padding: 80px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image {
+    width: 4%; 
+    margin: 30px;
+  }
+
+
+.floor-number {
+    width: 4%;
+    margin: 0 auto;
 }
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-:root {
-
-    /* VARIABLES */
-
-    /* Typography */
-  --headingFont: 'Merriweather', serif;
-  --bodyFont: 'Playfair-Display', sans-serif;
-}
-.primary-block {
-    display: grid;
-    grid-column: 2 / 8;
-    grid-row: 1 / 4;
-    background: var(--primary);
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-}
-
-.secondary-block {
-    display: grid;
-    grid-column: 8 / 13;
-    grid-row: 1 / 4;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-}
-
-.tertiary-block {
-    display: grid;
-    grid-column: 1 / 13;
-    grid-row: 4 / 5;
-    background: var(--secondary);
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-}
-
-.nav-menu {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    width: 30px;
-    padding:1rem;
-
-}
-
-.home-button {
-    grid-column: 1/13;
-    grid-row: 1/2;
-}
-
-
+.image-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0
+  }
+  
+  .middle-image {
+    width: 100%;
+    margin: 0 auto;
+    height: 10%;
+  } 
+  .door {
+    width: 5%;
+  }
+  .ratings-block {
+    text-align: center;
+  }
+  
