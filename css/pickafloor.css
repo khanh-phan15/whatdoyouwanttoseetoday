@@ -9,12 +9,35 @@
   }
 
 /*home page css*/ 
+.menu-container {
+  display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .contact {
+    width: 45%;
+    padding: 10px 100px 5px 1px;
+    margin: 10px;
+  }
+
+  .logo {
+    width: 20%;
+    padding: 10px 300px 5px 320px
+    }
+
+  .home-button {
+    width: 25%;
+    padding: 10px 10px 5px 200px;
+    margin: 10px;
+  }
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  margin: 0 auto;
   }
   .div1 { 
     grid-area: 1 / 1 / 2 / 7;
@@ -24,12 +47,12 @@
   .div2 {
     grid-area: 2 / 1 / 10 / 3;
     height: 10px;
-    width: 390px;
+    width: 370px;
    }
   .div3 { 
     grid-area: 2 / 5 / 10 / 7;
     height: 10px;
-    width: 390px;
+    width: 370px;
   }
   .div4 { 
     grid-area: 2 / 3 / 3 / 5;
@@ -50,9 +73,26 @@
 
    }
 
+   .floor-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .floor {
+    width: 80%; /* adjust the width to fit your needs */
+    margin: 3px; /* add some margin for spacing */
+  }
+    
+
 /*Entry css*/
   body {
     background: var(--primary);
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-container {
@@ -65,31 +105,21 @@
     padding: 80px;
   }
 
-  .image-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .image {
-    width: 4%; 
-    margin: 30px;
-  }
-
-
-.floor-number {
-    width: 4%;
+.floor-number-entry {
+    width: 5%;
     margin: 0 auto;
 }
+
 .image-container {
     display: flex;
     flex-wrap: nowrap;
     gap: 0
   }
-  
+
   .middle-image {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    height: 10%;
+    height: 9%;
   } 
   .door {
     width: 5%;
