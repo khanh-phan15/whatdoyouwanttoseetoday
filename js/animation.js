@@ -1,20 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const div5 = document.getElementById("image1");
-  const div6 = document.getElementById("image2");
+/*
+ * @name Slider
+ * @arialabel The background starts off in a vibrant shade of purple with three sliders in the upper left corner labeled red, green, and blue. The user can drag each slider and the color of the background will change accordingly with the increase or decrease of each of these three colors. 
+ * @description Move the sliders to control the R, G, B values of the background.
+ */
+let rSlider, gSlider, bSlider;
 
-  // Function to animate images
-  function animateImages() {
-      // Make images larger
-      div5.style.width = "300px"; // New width
-      div6.style.width = "300px"; // New width
+function setup() {
+  // create canvas
+  createCanvas(710, 400);
+  textSize(15);
+  noStroke();
 
-      // Set a timeout to shrink back after 1 second
-      setTimeout(() => {
-          div5.style.width = "200px"; // Original width
-          div6.style.width = "200px"; // Original width
-      }, 1000); // Duration before shrinking back
-  }
+  // create sliders
+  rSlider = createSlider(0, 255, 100);
+  rSlider.position(20, 20);
+  gSlider = createSlider(0, 255, 0);
+  gSlider.position(20, 50);
+  bSlider = createSlider(0, 255, 255);
+  bSlider.position(20, 80);
+}
 
-  // Trigger the animation every 2 seconds
-  setInterval(animateImages, 2000); // Change every 2 seconds
-});
+function draw() {
+  const r = rSlider.value();
+  const g = gSlider.value();
+  const b = bSlider.value();
+  background(r, g, b);
+  text('red', rSlider.x * 2 + rSlider.width, 35);
+  text('green', gSlider.x * 2 + gSlider.width, 65);
+  text('blue', bSlider.x * 2 + bSlider.width, 95);
+}
