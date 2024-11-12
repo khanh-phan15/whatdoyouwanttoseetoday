@@ -23,6 +23,17 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
 </head>
 
 <body>
@@ -49,8 +60,22 @@
     <img src="../images/elevator-door-2.png" alt="Image 6" class="door">
   </div>
   
-  <center>The production featured stunning live music, with traditional instruments like the đàn tranh enhancing the emotional depth of the performance. The actors were incredibly talented, showcasing powerful vocals that conveyed a wide range of emotions, from joy to sorrow. 
-    One of the highlights was a dramatic duet that left the audience captivated, skillfully combining heartfelt lyrics with expressive choreography. The colorful costumes and elaborate sets added to the visual appeal, making it a feast for the eyes.</center>
+
+  <button id="playSound">Play Sound</button>
+  <audio id="myAudio">
+    <source src="../audio/cai-luong-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.getElementById('playSound').addEventListener('click', function() {
+        var audio = document.getElementById('myAudio');
+        audio.play();
+    });
+</script>
+
+<p class="title-text">CẢI LƯƠNG - VIETNAMESE MODERN FOLK OPERA</p>
+  <p class="review-text">Attending a múa rối nước performance in Vietnam was like stepping into a living piece of history. The puppets danced gracefully across the water, their movements perfectly synchronized with the skilled musicians playing behind the scenes. As the stories of daily village life unfolded, I couldn’t help but feel a deep sense of pride for this uniquely Vietnamese art form, passed down through generations.!</p>
 
 <section class="stars-block">
     <ul class="ratings-block">

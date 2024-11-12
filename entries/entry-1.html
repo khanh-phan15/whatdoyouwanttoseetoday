@@ -18,11 +18,23 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/pickafloor.css">
-   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
 </head>
 
 <body>
@@ -49,14 +61,30 @@
     <img src="../images/mua-roi-nuoc.jpg" alt="Image 5" class="middle-image">
     <img src="../images/elevator-door-2.png" alt="Image 6" class="door">
   </div>
-  
-  <center> Attending a múa rối nước performance in Vietnam was like stepping into a living piece of history. The puppets danced gracefully across the water, their movements perfectly synchronized with the skilled musicians playing behind the scenes. As the stories of daily village life unfolded, I couldn't help but feel a deep sense of pride for this uniquely Vietnamese art form, passed down through generations. </center>
+
+
+  <button id="playSound">Play Sound</button>
+  <audio id="myAudio">
+    <source src="../audio/mua-roi-nuoc-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.getElementById('playSound').addEventListener('click', function() {
+        var audio = document.getElementById('myAudio');
+        audio.play();
+    });
+</script>
+<p class="title-text">MÚA RỐI NƯỚC - VIETNAMESE WATER PUPPETRY</p>
+<p class="review-text">Attending a múa rối nước performance in Vietnam was like stepping into a living piece of history. The puppets danced gracefully across the water, their movements perfectly synchronized with the skilled musicians playing behind the scenes. As the stories of daily village life unfolded, I couldn’t help but feel a deep sense of pride for this uniquely Vietnamese art form, passed down through generations.!</p>
+
 
 <section class="stars-block">
   <ul class="ratings-block">
     <ul><span style="color: goldenrod;">&starf;</span> <span style="color: goldenrod;">&starf;</span> <span style="color: goldenrod;">&starf;</span> <span style="color: goldenrod;">&starf;</span> <span style="color: goldenrod;">&starf;</span> </ul> 
     
 
-</section>
+</section> 
+<script src="../js/animation.js"></script>
 </body>
 </html>

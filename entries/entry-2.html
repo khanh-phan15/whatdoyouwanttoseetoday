@@ -23,6 +23,17 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
 </head>
 
 <body>
@@ -50,7 +61,21 @@
     <img src="../images/elevator-door-2.png" alt="Image 6" class="door">
   </div>
 
-  <center> Watching Tuồng was a mesmerizing dive into Vietnamese cultural heritage. The vivid costumes and symbolic masks immediately drew me into its rich, historical world. The dramatic gestures, intense expressions, and powerful vocals made the performance deeply captivating, even beyond the language barrier. Each scene reflected the art forms intricate storytelling and emotional depth. Overall, it was an unforgettable experience that reignited my appreciation for traditional Vietnamese arts.</center>
+  <button id="playSound">Play Sound</button>
+  <audio id="myAudio">
+    <source src="../audio/nha-nhac-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.getElementById('playSound').addEventListener('click', function() {
+        var audio = document.getElementById('myAudio');
+        audio.play();
+    });
+</script>
+<p class="title-text">TUỒNG - VIETNAMESE CLASSICAL THEATRE</p>
+  <p class="review-text">Watching Tuồng was a mesmerizing dive into Vietnamese cultural heritage. The vivid costumes and symbolic masks immediately drew me into its rich, historical world. The dramatic gestures, intense expressions, and powerful vocals made the performance deeply captivating, even beyond the language barrier. Each scene reflected the art forms intricate storytelling and emotional depth. Overall, it was an unforgettable experience that reignited my appreciation for traditional Vietnamese arts.</p>
+
     <section class="stars-block">
       <ul class="ratings-block">
         <ul><span style="color: goldenrod;">&starf;</span> <span style="color: goldenrod;">&starf;</span> <span style="color: goldenrod;">&starf;</span> </ul> 
@@ -58,17 +83,18 @@
         <div class="masks">
           <div class="red-mask">
               <img src="../images/red-mask.png" alt="red-mask">
-              <div class="text-box">Text for Image 1</div>
+              <div class="text-box">Phàn Định Công</div>
           </div>
           <div class="white-mask">
               <img src="../images/white-mask.png" alt="white-mask">
-              <div class="text-box">Text for Image 2</div>
+              <div class="text-box">Đông Trác</div>
           </div>
           <div class="blue-mask">
               <img src="../images/blue-mask.png" alt="blue-mask">
-              <div class="text-box">Text for Image 3</div>
+              <div class="text-box">Khương Linh Tá</div>
           </div>
       </div>
 
       </body>
 </html>
+

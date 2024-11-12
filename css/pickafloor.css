@@ -1,5 +1,4 @@
 
-
 :root {
     /* Core colors */
     --primary: hsl(30, 39%, 78%);
@@ -36,6 +35,7 @@
     max-width: 100%;
     height: auto;
   }
+
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -151,13 +151,29 @@
   } 
   .door {
     width: 5%;
+    height: 721.5px;
   }
   
   .stars-block {
-    text-align: center;
+    text-align: center; /* Center the content within the stars-block */
+    margin: 40px 0; /* Optional: Add top and bottom margins for spacing */
   }
+  
   .ratings-block {
-    display: inline-block;}
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .ratings-block ul {
+    display: inline-block; /* Make the nested ul behave like an inline block */
+    margin: 20px 0; /* Add vertical margins for spacing */
+  }
+  
+  .ratings-block span {
+    font-size: 40px; /* Optional: Adjust the size of the stars */
+    margin: 0 5px; /* Add horizontal spacing between stars */
+  }
 
 
 /*Entry 2*/
@@ -177,17 +193,42 @@
 .red-mask {
   width: 20%;
   height: auto;
+  font-family: 'Lekton'
 }
 .white-mask {
   width: 20%;
   height: auto;
+  font-family: 'Lekton'
+
 }
 .blue-mask {
   width: 20%;
   height: auto;
+  font-family: 'Lekton'
+
 }
 
 .text-box {
   margin-top: 10px;
   padding: 10px;
+}
+
+.review-text {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;   
+  margin-right: 60px;  
+  margin-bottom: 10px; 
+  margin-left: 60px; 
+  font-family: 'Lekton'
+}
+
+.title-text {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 50px;   
+  margin-right: 60px;  
+  margin-bottom: 10px; 
+  margin-left: 60px; 
+  font-family: 'Big Shoulders Display', sans serif
 }
